@@ -25,7 +25,7 @@ unsigned char shellcode[] =
 "\xd5\x63\x61\x6c\x63\x2e\x65\x78\x65\x00";
 
 
-typedef struct  //structure of systemfunction032
+typedef struct  //structure of USTRING
 {
 	DWORD Length;
 	DWORD MaximumLength;
